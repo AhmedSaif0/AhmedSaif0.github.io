@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <>
-<div className="about">About33333333333333333</div>
+<div className="container about">About33333333333333333</div>
     </>
   )
 }
