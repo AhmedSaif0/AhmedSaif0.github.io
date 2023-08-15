@@ -7,6 +7,9 @@
 $primary-color: #ffd700;
 
 @import 'animate.css';
+ @import '~loaders.css/src/animations/ball-rotate.scss';
+@import '~loaders.css/src/animations/semi-circle-spin.scss';
+
 
 @font-face {
     font-family: 'Helvetica Neue';
@@ -30,3 +33,18 @@ $primary-color: #ffd700;
     font-weight: normal;
     font-style: normal;
   }
+
+  .loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+  }
+  

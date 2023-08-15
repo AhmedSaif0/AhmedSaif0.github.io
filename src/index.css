@@ -9,8 +9,14 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #022c43;
-    /* background-image: url("./assets/images/background.jpg") !important; */
     overflow: hidden;
     background-size: cover;
     display: block;
   }
+
+  /* body{
+    background:linear-gradient(red, transparent),
+               linear-gradient(to top left,lime, transparent),
+               linear-gradient(to top right,blue, transparent) !important;
+    background-blend-mode: screen;
+  } */
