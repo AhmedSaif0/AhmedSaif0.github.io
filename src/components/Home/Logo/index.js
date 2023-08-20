@@ -1,26 +1,7 @@
 import LogoA from '../../../assets/images/ahmed1.jpg'
-// import './index.scss'
-
-// import React from 'react'
-
-// const Logo = () => {
-//   return (
-//     <div className="logo-container">
-//             <img
-//         className="solid-logo"
-//         src={LogoA}
-//         alt="JavaScript,  Developer"
-//       />
-//     </div>
-//   )
-// }
-// export default Logo
-
-
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-// import LogoS from '../../../assets/images/logo-s.png'
 import './index.scss'
 
 const Logo = () => {

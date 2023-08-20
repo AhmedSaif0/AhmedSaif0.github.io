@@ -1,34 +1,37 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
+import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
- 
+  const  refForm = useRef(null)
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 3000)
-  // }, [])
+  useEffect(()=>{
+   setTimeout(()=>{
+      setLetterClass('text-animate-hover')
+  },3000)
+},[])
+  // Send Email
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault()
+    
+    emailjs
+      .sendForm('service_5wpmhke', 'template_gvdy9ug', refForm.current, 'gvWRM6Saw7ytQ85mD')
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
-  //   emailjs
-  //     .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-  //     .then(
-  //       () => {
-  //         alert('Message successfully sent!')
-  //         window.location.reload(false)
-  //       },
-  //       () => {
-  //         alert('Failed to send the message, please try again')
-  //       }
-  //     )
-  // }
-
+  
   return(
     <>
 <div className="container contact-page">
@@ -46,10 +49,10 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="from_name" required />
                 </li>
                 <li className="half">
                   <input
