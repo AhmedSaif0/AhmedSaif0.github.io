@@ -5,12 +5,27 @@
 //   linear-gradient(to top right,blue, transparent);
 // background-blend-mode: screen;
 // }
+@import '/src/App';
+.layout{
+  display:-webkit-box;
+  margin: 0;
+  background-color:$layout-color;
+
 
 .page {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
   height: 100%;
   position: absolute;
+  left: 12.5%;
+  // border: 0px solid rgb(202, 202, 202);
+ 
+
 }
+
+
 
 .top-tags {
   bottom: auto;
@@ -18,7 +33,7 @@
 }
 
 .tags {
-  color: #ffd700;
+  color: $blue-color;
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -172,4 +187,5 @@
     height: 0%;
     overflow: visible;
   }
+}
 }

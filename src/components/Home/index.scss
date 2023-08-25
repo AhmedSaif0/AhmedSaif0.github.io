@@ -1,3 +1,6 @@
+$text-color:#4d4d4d;
+$blue-color:#0046c0;
+@import '../../App';
 .home-page {
   .text-zone {
     position: absolute;
@@ -9,7 +12,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: $blue-color;
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -19,7 +22,7 @@
     &:before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: $blue-color;
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
@@ -30,7 +33,7 @@
     &:after {
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color:$blue-color;
       font-size: 18px;
       position: absolute;
       margin-top: 18px;
@@ -50,33 +53,67 @@
   }
 
   h2 {
-    color: #8d8d8d;
+    color: $blue-color;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-button {
-    color: #ffd700;
+    color: $blue-color;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 1px solid $blue-color;
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
+    border-radius: 10px;
 
     &:hover {
-      background: #ffd700;
-      color: #333;
+      background: $blue-color;
+      color: #ffffff;
       transition: 0.3s ease-in-out;      
     }
   }
+
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 280px;
+    
+    left: -17px;
+    width: 200px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+        color: $blue-color;
+
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: $sdbarlinka-color;
+        }
+      }
+    }
+  }
+
 }

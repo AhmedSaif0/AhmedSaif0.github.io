@@ -19,7 +19,7 @@
 
   .solid-logo {
     position: absolute;
-    top: 10%;
+    top: 24%;
     right: auto;
     bottom: auto;
     left: 0;
@@ -29,11 +29,10 @@
     transform: rotateZ(0deg) !important;
     z-index: 1;
     object-fit: cover;
-    border-radius: 50%;
-    width: 122%;
-    padding: 3px;
-    border: 2px solid #005bd0;
-    stroke: #ffd700;
+    border-radius: 10%;
+    width: 84%;
+    padding: 0px;
+    border: 2px solid #ffffff;
   }
 }
 

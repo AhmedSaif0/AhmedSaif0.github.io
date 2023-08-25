@@ -6,6 +6,8 @@ import Logo from './Logo'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebook, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 
 const Home = () => {
@@ -62,10 +64,42 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
+          <h2>Front End Developer / JavaScript Expert</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+
+ {/* social media links */}
+ <ul>
+                <li> 
+                    <a 
+                      href="#"
+                      target="_blank"
+                      rel="norefferrer" 
+                    >
+                     <FontAwesomeIcon icon={faLinkedin}/> 
+                     </a>
+                </li>
+                <li> 
+                    <a
+                        href="#"
+                         target="_blank"
+                         rel="norefferrer" 
+                >
+                     <FontAwesomeIcon icon={faFacebook}/>
+                     </a>
+                </li>
+                <li>
+                     <a
+                        href="#"
+                         target="_blank"
+                         rel="norefferrer" 
+                >
+                    <FontAwesomeIcon icon={faTwitter}/> 
+                    </a>
+                </li>
+            </ul>
+
         </div>
       <Logo />
       </div>
