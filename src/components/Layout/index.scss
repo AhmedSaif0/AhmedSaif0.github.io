@@ -7,7 +7,8 @@
 // }
 @import '/src/App';
 .layout{
-  display:-webkit-box;
+  display:flex;
+  flex-wrap: wrap;
   margin: 0;
   background-color:$layout-color;
 
@@ -17,10 +18,9 @@
   justify-content: center;
   align-items: center;
   width: 75%;
-  height: 100%;
   position: absolute;
   left: 12.5%;
-  // border: 0px solid rgb(202, 202, 202);
+  border: 0px solid rgb(202, 202, 202);
  
 
 }
@@ -66,7 +66,7 @@
 
 .container.contact-page,
 .container.about-page,
-.container.portfolio-page {
+.container.home-page {
   
     h1 {
       font-size: 53px;
@@ -155,7 +155,7 @@
     &.about-page,
     &.portfolio-page {
       .text-zone {
-        position: initial;
+        // position: initial;
         transform: none;
         width: 100%;
         display: block;

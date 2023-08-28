@@ -2,13 +2,21 @@ $text-color:#4d4d4d;
 $blue-color:#0046c0;
 @import '../../App';
 .home-page {
+  margin-top: 100px;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-    max-height: 90%;
+  
+    width: 50%;
+    max-height: 100%;
+
   }
 
   h1 {
@@ -88,15 +96,12 @@ $blue-color:#0046c0;
   ul {
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
-    top: 280px;
-    
-    left: -17px;
     width: 200px;
     padding: 0;
     list-style: none;
     text-align: center;
-    margin: 0;
+    margin-top: 79px;
+    margin-left: -25px;
 
     li {
       a {

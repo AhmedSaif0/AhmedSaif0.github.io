@@ -103,10 +103,29 @@ const Home = () => {
         </div>
       <Logo />
       </div>
-      <Loader type='semi-circle-spin'/>
+      {/* <Loader type='semi-circle-spin'/> */}
 
 </>
   )
 }
 
 export default Home
+
+{/* <div className="layout">
+<div className='app'>
+  <div className='page'>
+    <span className='tags top-tags'>&lt;body&gt;</span>
+
+
+
+
+    <span className='tags bottom-tags'>
+    &lt;/body&gt;
+    <br/>
+    <span className='Bottom-tag-html'>&lt;/html&gt;</span>
+    </span>
+
+ </div>
+</div>
+</div> */}
+    

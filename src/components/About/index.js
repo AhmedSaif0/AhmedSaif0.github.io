@@ -10,6 +10,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import './index.scss'
+import '../Layout/index.scss'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -41,7 +42,7 @@ const About = () => {
             photography enthusiast, and tech-obsessed!!!
           </p>
         </div>
-
+{/* 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
@@ -63,7 +64,7 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>  
       <Loader type='ball-rotate'/>
         </>

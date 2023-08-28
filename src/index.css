@@ -5,18 +5,13 @@ html {
   body {
     margin: 0;
     font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-    /* color: #ffffff; */
     color: #f5ffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
-    background-size: cover;
-    display: block;
   }
 
-  /* body{
-    background:linear-gradient(red, transparent),
-               linear-gradient(to top left,lime, transparent),
-               linear-gradient(to top right,blue, transparent) !important;
-    background-blend-mode: screen;
-  } */
+  .container {
+    margin: auto;
+    width: 80%;
+    height: auto;
+  }
